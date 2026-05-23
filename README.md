@@ -1,38 +1,102 @@
-# 🪷 Kaoruko Waguri System 🪷
+<p align="center">
+  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663625403694/xoeVzbTXMQLjtxbx.png" alt="Kaoruko System Banner" width="800">
+</p>
 
-Bem-vindo ao repositório oficial do **Kaoruko Waguri System**. Este é um bot de alto desempenho, desenvolvido e otimizado para oferecer a melhor experiência em automação e funcionalidades.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&color=A020F0&center=true&vCenter=true&width=600&lines=KAORUKO+SYSTEM+BOT;INTELIGENTE+•+RÁPIDO+•+SEGURO;O+MELHOR+PARA+WHATSAPP" alt="Typing SVG" />
+</p>
 
-## 🚀 Instalação
-
-Siga os passos abaixo para configurar o sistema em seu ambiente:
-
-1. **Instalar dependências:**
-   ```bash
-   npm install
-   ```
-
-2. **⚠️ Configuração para Termux:**
-   Se você utiliza o **Termux**, execute obrigatoriamente o comando abaixo após o `npm install`. Isso garante a build correta do módulo Canvas para o ambiente Android:
-   ```bash
-   node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
-   ```
-
-3. **Configuração de Chaves:**
-   Acesse a pasta `configs/` e preencha os arquivos JSON com suas credenciais e chaves de API.
-
-4. **Iniciar o Sistema:**
-   ```bash
-   sh start.sh
-   ```
-
-## 🛠️ Características do Sistema
-- **Proteção Avançada**: Código totalmente ofuscado para garantir a segurança da lógica.
-- **Estabilidade**: Injeção de contexto customizada para garantir o funcionamento do Eval mesmo sob ofuscação.
-- **Performance**: Baseado em uma versão otimizada da biblioteca Baileys (@boruto_vk7/baileys).
-- **Monitoramento**: Logs detalhados de conexão e eventos integrados.
-
-## 👤 Desenvolvedor & Créditos
-Este sistema foi desenvolvido, modificado e é mantido exclusivamente por **Boruto**. Todos os direitos sobre as otimizações e a estrutura atual pertencem ao desenvolvedor.
+<p align="center">
+  <a href="https://github.com/borutovk7">
+    <img src="https://img.shields.io/badge/Autor-Eduardo%20Dev-purple?style=for-the-badge&logo=github" alt="Autor">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Versão-1.0.0-blueviolet?style=for-the-badge&logo=git" alt="Versão">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Status-Online-green?style=for-the-badge&logo=statuspage" alt="Status">
+  </a>
+</p>
 
 ---
-© 2026 Kaoruko Waguri System | Desenvolvido por Boruto </>
+
+## 🌟 Sobre o Projeto
+
+O **Kaoruko System** é um bot de WhatsApp de alto desempenho, focado em oferecer uma experiência completa de automação, entretenimento e segurança. Desenvolvido com as tecnologias mais recentes, ele combina inteligência artificial com uma interface de comandos intuitiva.
+
+> "Sempre buscando melhorar. Este bot foi feito com o nome de uma pessoa muito importante para mim. Peço que tenha cuidado, pois deu trabalho para fazer." — **Eduardo Dev**
+
+---
+
+## 🚀 Instalação (Termux)
+
+Siga os passos abaixo para instalar o bot no seu dispositivo Android via Termux:
+
+### 1️⃣ Atualização do Sistema
+```bash
+pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install git -y
+```
+
+### 2️⃣ Acesso ao Armazenamento
+```bash
+termux-setup-storage
+```
+
+### 3️⃣ Clonagem do Repositório
+```bash
+git clone https://github.com/borutovk7/Kauroko-bot
+cd Kauroko-bot
+```
+
+### 4️⃣ Instalação de Dependências e Início
+```bash
+npm install
+### ⚠️ IMPORTANTE (USUÁRIOS DE TERMUX)
+Se você estiver utilizando o **Termux**, execute o comando abaixo após instalar os módulos para garantir a build correta do Canvas:
+```bash
+node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
+```
+ && npm start
+```
+
+---
+
+## 🛠️ Funcionalidades Principais
+
+| Categoria | Descrição |
+| :--- | :--- |
+| **🛡️ Segurança** | Sistema Anti-Nuke, Anti-Link e proteção de grupos. |
+| **🤖 IA** | Integração com Google Gemini para conversas inteligentes. |
+| **🎮 Diversão** | Jogos como Uno, Jogo da Velha, Akinator e RPG Solo Leveling. |
+| **📥 Downloads** | Download automático de vídeos (YouTube, TikTok, Instagram). |
+| **💳 Economia** | Sistema de Pix, Aluguel e Saldo Virtual (Efipay). |
+| **🔞 NSFW** | Comandos adultos com sistema de verificação. |
+
+---
+
+## ⚙️ Comandos de Inicialização
+
+| Ação | Comando |
+| :--- | :--- |
+| **Iniciar Bot** | `npm start` |
+| **Start do Bot** | `sh start.sh` |
+
+
+---
+
+## 📞 Contato & Suporte
+
+Precisa de ajuda ou quer sugerir uma funcionalidade? Entre em contato diretamente com o desenvolvedor.
+
+<p align="left">
+  <a href="https://wa.me/559774004582">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  Desenvolvido com ❤️ por <b>Eduardo Dev</b><br>
+  © 2026 Kaoruko System - Todos os direitos reservados.
+</p>
