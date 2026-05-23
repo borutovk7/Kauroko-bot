@@ -65,7 +65,7 @@ console.error(err.stack);
 
 const getallcases = () => {
 if(global.__casesCached) return global.__casesCached
-findindex = fs.readFileSync("index.js").toString().match(/case\s+'(.+?)'/g)
+findindex = fs.readFileSync("index.js").toString().match(/case\s+'(.+?)'/g) || []
 cstt = []
 for(i of findindex) {
 cstt.push(i.split(`'`)[1])
