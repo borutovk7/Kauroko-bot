@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2026-05-23T13:29:04Z",
+    "name": "Kaoruko Waguri Bot",
+    "author": "borutovk7",
+    "description": "Egg oficial para o Bot Kaoruko Waguri com auto-update e suporte a Canvas.",
+    "features": null,
+    "docker_images": {
+        "Node.js 20 (Generic)": "ghcr.io/pterodactyl/builders:node_20"
+    },
+    "file_denylist": [],
+    "startup": "if [ -d .git ]; then git fetch --all && git reset --hard origin/main; fi; npm install && node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs && node index.js",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Sessão carregada com sucesso\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "container": "node:20-bookworm-slim",
+            "entrypoint": "bash",
+            "script": "#!/bin/bash\r\napt update\r\napt install -y git curl python3 make g++\r\n\r\ncd /home/container\r\ngit clone https://github.com/borutovk7/Kauroko-bot.git .\r\nnpm install\r\nnode ./node_modules/@irithell-js/canvas-termux/dist/install.cjs\r\n\r\necho \"Instalação concluída com sucesso!\""
+        }
+    },
+    "variables": [
+        {
+            "name": "Branch do GitHub",
+            "description": "Qual branch do repositório deve ser usada.",
+            "env_var": "GITHUB_BRANCH",
+            "default_value": "main",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        }
+    ]
+}
