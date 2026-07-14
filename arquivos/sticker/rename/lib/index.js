@@ -1,26 +1,26 @@
 'use strict';
-var __createBinding = this && this['__createBinding'] || (Object['create'] ? function (_0x5b8144, _0x54253c, _0x12bb45, _0x3d6983) {
-    if (_0x3d6983 === undefined)
-        _0x3d6983 = _0x12bb45;
-    var _0x5e4d38 = Object['getOwnPropertyDescriptor'](_0x54253c, _0x12bb45);
-    if (!_0x5e4d38 || ('get' in _0x5e4d38 ? !_0x54253c['__esModule'] : _0x5e4d38['writable'] || _0x5e4d38['configurable'])) {
-        _0x5e4d38 = {
+var __createBinding = this && this['__createBinding'] || (Object['create'] ? function (_0x4f25b6, _0x596936, _0xa57b80, _0x111ac1) {
+    if (_0x111ac1 === undefined)
+        _0x111ac1 = _0xa57b80;
+    var _0x52d580 = Object['getOwnPropertyDescriptor'](_0x596936, _0xa57b80);
+    if (!_0x52d580 || ('get' in _0x52d580 ? !_0x596936['__esModule'] : _0x52d580['writable'] || _0x52d580['configurable'])) {
+        _0x52d580 = {
             'enumerable': !![],
             'get': function () {
-                return _0x54253c[_0x12bb45];
+                return _0x596936[_0xa57b80];
             }
         };
     }
-    Object['defineProperty'](_0x5b8144, _0x3d6983, _0x5e4d38);
-} : function (_0x27167d, _0x1b98ee, _0x2bd070, _0x9cfe6) {
-    if (_0x9cfe6 === undefined)
-        _0x9cfe6 = _0x2bd070;
-    _0x27167d[_0x9cfe6] = _0x1b98ee[_0x2bd070];
+    Object['defineProperty'](_0x4f25b6, _0x111ac1, _0x52d580);
+} : function (_0x3d0f81, _0x491fca, _0x5e2ed7, _0x560e51) {
+    if (_0x560e51 === undefined)
+        _0x560e51 = _0x5e2ed7;
+    _0x3d0f81[_0x560e51] = _0x491fca[_0x5e2ed7];
 });
-var __exportStar = this && this['__exportStar'] || function (_0x5f28b1, exports) {
-    for (var _0x2dbb19 in _0x5f28b1)
-        if (_0x2dbb19 !== 'default' && !Object['prototype']['hasOwnProperty']['call'](exports, _0x2dbb19))
-            __createBinding(exports, _0x5f28b1, _0x2dbb19);
+var __exportStar = this && this['__exportStar'] || function (_0x29164d, exports) {
+    for (var _0x1ea912 in _0x29164d)
+        if (_0x1ea912 !== 'default' && !Object['prototype']['hasOwnProperty']['call'](exports, _0x1ea912))
+            __createBinding(exports, _0x29164d, _0x1ea912);
 };
 Object['defineProperty'](exports, '__esModule', { 'value': !![] });
 __exportStar(require('./exif'), exports);

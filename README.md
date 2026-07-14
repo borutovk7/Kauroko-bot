@@ -6,7 +6,7 @@
 
 `Versão 3.0.4-rch` · `Node.js 20+` · `WhatsApp` · `Em desenvolvimento`
 
-**Navegação:** [Instalação](#-instalação) · [Recursos](#-recursos) · [Configuração](#%EF%B8%8F-configuração-inicial) · [Conexão](#-início-e-conexão) · [Segurança](#-segurança)
+**Navegação:** [Instalação](#-instalação) · [SQLite](#-sqlite-e-bancos-de-dados) · [Recursos](#-recursos) · [Configuração](#%EF%B8%8F-configuração-inicial) · [Conexão](#-início-e-conexão) · [Segurança](#-segurança)
 
 ---
 
@@ -57,6 +57,8 @@ npm start
 
 Ao iniciar, o menu permite selecionar a conexão por **QR Code** ou por **código de pareamento**.
 
+> Para instalar especificamente a cópia ofuscada enviada ao Git, use `git clone --branch obfuscated-release --single-branch https://github.com/borutovk7/Kauroko-bot.git`.
+
 ### Linux / VPS
 
 ```bash
@@ -69,6 +71,39 @@ npm start
 ```
 
 > A primeira instalação pode levar alguns minutos por causa das dependências do projeto.
+
+---
+
+## 🗃️ SQLite e bancos de dados
+
+A bot usa SQLite para as configurações dos grupos, memória da IA, subbots e sessão do WhatsApp. Os bancos são criados e atualizados automaticamente durante o uso; **não é necessário criar arquivos `.sqlite` manualmente**.
+
+### Build do SQLite no Termux
+
+Se, depois do `npm install`, aparecer um erro como **“SQLite não carregou”** ou falhar ao iniciar a sessão, instale as ferramentas de compilação e rode:
+
+```bash
+pkg install -y python make clang
+npm install-scripts approve @irithell-js/better-sqlite3-termux
+npm run build:sqlite
+```
+
+O comando `npm run build:sqlite` executa:
+
+```bash
+npm rebuild @irithell-js/better-sqlite3-termux
+```
+
+> Execute o build dentro da pasta da bot. Não envie para o Git arquivos `.sqlite`, `*-wal`, `*-shm` ou a pasta de sessão — eles podem conter dados e credenciais locais.
+
+### Bancos usados pelo sistema
+
+| Arquivo | Finalidade |
+| :-- | :-- |
+| `database/grupos/configuracoes.sqlite` | Configurações e atividades dos grupos. |
+| `database/kaoruko_ai.sqlite` | Memória, histórico e cache da IA. |
+| `database/subbots.sqlite` | Cadastro, status e logs dos subbots. |
+| `database/KAUROKO-QR/auth_state.sqlite` | Sessão principal após pareamento. |
 
 ---
 

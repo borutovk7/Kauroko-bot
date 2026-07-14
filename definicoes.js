@@ -16,7 +16,7 @@ const request = require('request');
 const ms = require('ms');
 const os = require('os');
 const ffmpeg = require('fluent-ffmpeg');
-const fetch = (..._0x1545e8) => import('node-fetch')['then'](({default: _0x2212d9}) => _0x2212d9(..._0x1545e8));
+const fetch = (..._0x364774) => import('node-fetch')['then'](({default: _0x1479c7}) => _0x1479c7(..._0x364774));
 const {exec, execSync} = require('child_process');
 const moment = require('moment-timezone');
 const colors = require('colors');
@@ -65,211 +65,211 @@ const {linguagem, mess, getInfo} = require('./configs/lib/index.js');
 const {psycatgames, vyroEngine} = require('./arquivos/funcoes/scrapper.js');
 const {destrava, destrava2} = require('./arquivos/funcoes/destrava.js');
 const {tabela} = require('./arquivos/js/tabela.js');
-function DLT_FL(_0x1781c8) {
+function DLT_FL(_0x2beb78) {
     try {
-        fs['unlinkSync'](_0x1781c8);
-    } catch (_0xdf6642) {
+        fs['unlinkSync'](_0x2beb78);
+    } catch (_0x471d30) {
     }
 }
 if (!nescessario['botoes_']) {
-    var EnvBotao = async (_0x400394, _0x33d320, _0x3ed6e5, _0x492868, _0x260933, _0x322dfc) => {
-        if (_0x322dfc['split']('|')[0x1] != '0') {
-            _0x3ed6e5['sendMessage'](_0x400394, {
-                'image': { 'url': _0x322dfc['split']('|')[0x1] },
-                'caption': _0x492868,
-                'mentions': [_0x33d320]
+    var EnvBotao = async (_0x2949da, _0xbec105, _0x28913f, _0xfce08a, _0x48c0b8, _0x1bf0d2) => {
+        if (_0x1bf0d2['split']('|')[0x1] != '0') {
+            _0x28913f['sendMessage'](_0x2949da, {
+                'image': { 'url': _0x1bf0d2['split']('|')[0x1] },
+                'caption': _0xfce08a,
+                'mentions': [_0xbec105]
             });
         } else {
-            _0x3ed6e5['sendMessage'](_0x400394, {
-                'text': _0x492868,
-                'mentions': [_0x33d320]
+            _0x28913f['sendMessage'](_0x2949da, {
+                'text': _0xfce08a,
+                'mentions': [_0xbec105]
             });
         }
     };
 } else {
-    var EnvBotao = async (_0x56619c, _0x25649e, _0x35824d, _0x8f6f38, _0xc4eef9, _0x5f2803, _0xb5fd30 = [], _0x36971d) => {
-        var _0x198b52 = _0x5f2803['split']('|')[0x0]['charAt'](0x0);
-        var _0x46b034 = _0x198b52 == '1' ? [{
-                'buttonId': _0xb5fd30[0x0],
-                'buttonText': { 'displayText': _0xb5fd30[0x1] },
+    var EnvBotao = async (_0x33fb22, _0x5068bf, _0x3c05ff, _0x49cd3e, _0x41bba1, _0x2628b5, _0x43880c = [], _0x20894b) => {
+        var _0x49884c = _0x2628b5['split']('|')[0x0]['charAt'](0x0);
+        var _0x53dd7b = _0x49884c == '1' ? [{
+                'buttonId': _0x43880c[0x0],
+                'buttonText': { 'displayText': _0x43880c[0x1] },
                 'type': 0x1
-            }] : _0x198b52 == '2' ? [
+            }] : _0x49884c == '2' ? [
             {
-                'buttonId': _0xb5fd30[0x0],
-                'buttonText': { 'displayText': _0xb5fd30[0x1] },
+                'buttonId': _0x43880c[0x0],
+                'buttonText': { 'displayText': _0x43880c[0x1] },
                 'type': 0x1
             },
             {
-                'buttonId': _0xb5fd30[0x2],
-                'buttonText': { 'displayText': _0xb5fd30[0x3] },
+                'buttonId': _0x43880c[0x2],
+                'buttonText': { 'displayText': _0x43880c[0x3] },
                 'type': 0x1
             }
-        ] : _0x198b52 == '3' ? [
+        ] : _0x49884c == '3' ? [
             {
-                'buttonId': _0xb5fd30[0x0],
-                'buttonText': { 'displayText': _0xb5fd30[0x1] },
+                'buttonId': _0x43880c[0x0],
+                'buttonText': { 'displayText': _0x43880c[0x1] },
                 'type': 0x1
             },
             {
-                'buttonId': _0xb5fd30[0x2],
-                'buttonText': { 'displayText': _0xb5fd30[0x3] },
+                'buttonId': _0x43880c[0x2],
+                'buttonText': { 'displayText': _0x43880c[0x3] },
                 'type': 0x1
             },
             {
-                'buttonId': _0xb5fd30[0x4],
-                'buttonText': { 'displayText': _0xb5fd30[0x5] },
+                'buttonId': _0x43880c[0x4],
+                'buttonText': { 'displayText': _0x43880c[0x5] },
                 'type': 0x1
             }
         ] : '';
-        if (_0x5f2803['split']('|')[0x1] == '0' && !_0x5f2803['split']('|')[0x0]['includes']('v')) {
-            var _0x2898fc = {
-                'text': _0x8f6f38,
-                'footer': _0xc4eef9,
-                'buttons': _0x46b034,
+        if (_0x2628b5['split']('|')[0x1] == '0' && !_0x2628b5['split']('|')[0x0]['includes']('v')) {
+            var _0x5a6974 = {
+                'text': _0x49cd3e,
+                'footer': _0x41bba1,
+                'buttons': _0x53dd7b,
                 'headerType': 0x1,
-                'mentions': [_0x25649e]
+                'mentions': [_0x5068bf]
             };
-        } else if (_0x5f2803['split']('|')[0x1] != '0' && !_0x5f2803['split']('|')[0x0]['includes']('v')) {
-            var _0x2898fc = {
-                'image': { 'url': _0x5f2803['split']('|')[0x1] },
-                'caption': _0x8f6f38,
-                'footer': _0xc4eef9,
-                'buttons': _0x46b034,
+        } else if (_0x2628b5['split']('|')[0x1] != '0' && !_0x2628b5['split']('|')[0x0]['includes']('v')) {
+            var _0x5a6974 = {
+                'image': { 'url': _0x2628b5['split']('|')[0x1] },
+                'caption': _0x49cd3e,
+                'footer': _0x41bba1,
+                'buttons': _0x53dd7b,
                 'headerType': 0x1,
-                'mentions': [_0x25649e]
+                'mentions': [_0x5068bf]
             };
-        } else if (_0x5f2803['split']('|')[0x1] != '0' && _0x5f2803['split']('|')[0x0]['includes']('v')) {
-            var _0x2898fc = {
-                'video': { 'url': _0x5f2803['split']('|')[0x1] },
-                'caption': _0x8f6f38,
-                'footer': _0xc4eef9,
-                'buttons': _0x46b034,
+        } else if (_0x2628b5['split']('|')[0x1] != '0' && _0x2628b5['split']('|')[0x0]['includes']('v')) {
+            var _0x5a6974 = {
+                'video': { 'url': _0x2628b5['split']('|')[0x1] },
+                'caption': _0x49cd3e,
+                'footer': _0x41bba1,
+                'buttons': _0x53dd7b,
                 'headerType': 0x1,
                 'mentions': [ME]
             };
         }
-        _0x35824d['sendMessage'](_0x56619c, _0x2898fc, { 'quoted': _0x36971d })['catch'](_0x5eddbd => {
-            return console['log']('Erro\x20no\x20botão,\x20Tente\x20novamente\x20ou\x20avalie\x20o\x20que\x20pode\x20está\x20errando..\x20' + _0x5eddbd);
+        _0x3c05ff['sendMessage'](_0x33fb22, _0x5a6974, { 'quoted': _0x20894b })['catch'](_0x1c9764 => {
+            return console['log']('Erro\x20no\x20botão,\x20Tente\x20novamente\x20ou\x20avalie\x20o\x20que\x20pode\x20está\x20errando..\x20' + _0x1c9764);
         });
     };
 }
-const contar = (_0x56a389, _0x38b95b) => {
+const contar = (_0x71a782, _0x5371b3) => {
     total = 0x0;
-    for (i = 0x0; i < _0x56a389['length']; i++) {
-        if (_0x38b95b == _0x56a389[i])
+    for (i = 0x0; i < _0x71a782['length']; i++) {
+        if (_0x5371b3 == _0x71a782[i])
             total += 0x1;
     }
     return total;
 };
-const contarDias = _0x112b8f => {
-    if (!_0x112b8f['includes']('/'))
+const contarDias = _0x475cb9 => {
+    if (!_0x475cb9['includes']('/'))
         return 'Tem\x20que\x20colocar\x20em\x20/,\x20ex:\x2001/01/2024';
     barra = 0x0;
-    for (i of _0x112b8f) {
+    for (i of _0x475cb9) {
         if (i == '/')
             barra += 0x1;
     }
     if (barra <= 0x0 || barra > 0x2)
         return 'Revise\x20o\x20formato\x20da\x20data\x20pfvr...\x20Receio\x20que\x20você\x20não\x20tenha\x20colocado\x20o\x20formato\x20correto\x20DD/MM/YYYY';
-    var [_0x3a6758, _0x7daa3e, _0x235fda] = _0x112b8f['split']('/');
-    year = _0x235fda['length'] == 0x2 ? '20' + _0x235fda : _0x235fda;
-    if (Number(_0x3a6758) < 0x1 || Number(_0x3a6758) > 0x1f)
+    var [_0x4a9499, _0x229b8c, _0xdee90f] = _0x475cb9['split']('/');
+    year = _0xdee90f['length'] == 0x2 ? '20' + _0xdee90f : _0xdee90f;
+    if (Number(_0x4a9499) < 0x1 || Number(_0x4a9499) > 0x1f)
         return 'Os\x20dias\x20vão\x20de\x201\x20até\x20no\x20mxm\x2031';
-    if (Number(_0x7daa3e) < 0x1 || Number(_0x7daa3e) > 0xc)
+    if (Number(_0x229b8c) < 0x1 || Number(_0x229b8c) > 0xc)
         return 'Os\x20meses\x20vão\x20de\x201\x20até\x20no\x20mxm\x2012';
-    if (Number(year) < 0x1 || Number(_0x3a6758) > 0x5f5e100)
+    if (Number(year) < 0x1 || Number(_0x4a9499) > 0x5f5e100)
         return 'Os\x20anos\x20vão\x20de\x201\x20até\x20no\x20mxm\x20100000000';
     day = Number(year) * 0x16d;
-    day += Number(_0x7daa3e) * 0x1e;
-    day += Number(_0x3a6758);
+    day += Number(_0x229b8c) * 0x1e;
+    day += Number(_0x4a9499);
     return day;
 };
-const getInviteCode = _0x159267 => {
-    if (_0x159267['includes']('chat.whatsapp.com/')) {
+const getInviteCode = _0x156e19 => {
+    if (_0x156e19['includes']('chat.whatsapp.com/')) {
         return {
             'type': 'group',
-            'code': _0x159267['split']('chat.whatsapp.com/')[0x1]['split'](/[?&]/)[0x0]
+            'code': _0x156e19['split']('chat.whatsapp.com/')[0x1]['split'](/[?&]/)[0x0]
         };
     }
-    if (_0x159267['includes']('whatsapp.com/channel/')) {
+    if (_0x156e19['includes']('whatsapp.com/channel/')) {
         return {
             'type': 'channel',
-            'code': _0x159267['split']('whatsapp.com/channel/')[0x1]['split'](/[?&]/)[0x0]
+            'code': _0x156e19['split']('whatsapp.com/channel/')[0x1]['split'](/[?&]/)[0x0]
         };
     }
     return null;
 };
-const sendFutureTime = _0x2759ff => {
+const sendFutureTime = _0x3be486 => {
     hr = moment['tz']('America/Sao_Paulo');
-    for (i of _0x2759ff) {
+    for (i of _0x3be486) {
         hr = hr['add'](i['valor'], i['type']);
     }
     return hr['calendar']();
 };
-const contarMin = _0xb179a5 => {
-    if (contar(String(_0xb179a5), ':') != 0x1)
+const contarMin = _0x15174a => {
+    if (contar(String(_0x15174a), ':') != 0x1)
         return 'É\x20necessário\x20o\x20uso\x20dos\x20:\x20no\x20horário,\x20seguindo\x20apenas\x20horas\x20e\x20minutos';
-    var [_0x2256ee, _0x28860d] = _0xb179a5['split'](':');
-    return Number(Number(_0x2256ee) * 0x3c) + Number(_0x28860d);
+    var [_0x1c8918, _0x472824] = _0x15174a['split'](':');
+    return Number(Number(_0x1c8918) * 0x3c) + Number(_0x472824);
 };
-const isJsonIncludes = (_0x420265, _0x1c2394) => {
-    if (JSON['stringify'](_0x420265)['includes'](_0x1c2394))
+const isJsonIncludes = (_0x48ba26, _0x7d2c3c) => {
+    if (JSON['stringify'](_0x48ba26)['includes'](_0x7d2c3c))
         return !![];
     return ![];
 };
-const converterMin = _0x306c2e => {
-    if (Number(_0x306c2e) === 0x0)
+const converterMin = _0x98646f => {
+    if (Number(_0x98646f) === 0x0)
         return '00:00';
-    if (!Number(_0x306c2e))
+    if (!Number(_0x98646f))
         return 'Precisa\x20ser\x20um\x20número';
-    nmr = Number(_0x306c2e);
+    nmr = Number(_0x98646f);
     b = nmr % 0x3c;
     a = (nmr - b) / 0x3c;
     return (a < 0xa ? '0' + a : a) + ':' + (b < 0xa ? '0' + b : b);
 };
-function saveJSON(_0xb11673, _0xab3ea2) {
-    fs['writeFileSync'](_0xab3ea2, JSON['stringify'](_0xb11673, null, 0x2));
+function saveJSON(_0x5bee80, _0x4aa376) {
+    fs['writeFileSync'](_0x4aa376, JSON['stringify'](_0x5bee80, null, 0x2));
 }
 const {sendlistbuttons, EnvButton, sendListB, sendSingleWithListAndButtons} = require('./arquivos/funcoes/botoes.js');
-function ANT_LTR_MD_EMJ(_0x30680e) {
-    for (let _0x22cc36 = 0x0, _0x457e4e = _0x30680e['length']; _0x22cc36 < _0x457e4e; _0x22cc36++) {
-        if (_0x30680e['charCodeAt'](_0x22cc36) > 0xff) {
+function ANT_LTR_MD_EMJ(_0x17cce9) {
+    for (let _0x6cd959 = 0x0, _0x3cb1df = _0x17cce9['length']; _0x6cd959 < _0x3cb1df; _0x6cd959++) {
+        if (_0x17cce9['charCodeAt'](_0x6cd959) > 0xff) {
             return !![];
         }
     }
     return ![];
 }
-function kyun(_0x408423) {
-    function _0x1afe78(_0x3b0826) {
-        return (_0x3b0826 < 0xa ? '0' : '') + _0x3b0826;
+function kyun(_0x5aa813) {
+    function _0x348e46(_0x53d730) {
+        return (_0x53d730 < 0xa ? '0' : '') + _0x53d730;
     }
     ;
-    var _0xdca9cd = Math['floor'](_0x408423 / (0x3c * 0x3c) % 0x18);
-    var _0x2fd11e = Math['floor'](_0x408423 % (0x3c * 0x3c) / 0x3c);
-    var _0x161e65 = Math['floor'](_0x408423 % 0x3c);
-    return _0x1afe78(_0xdca9cd) + '\x20horas,\x20' + _0x1afe78(_0x2fd11e) + '\x20minutos\x20e\x20' + _0x1afe78(_0x161e65) + '\x20segundos.';
+    var _0x2b64c8 = Math['floor'](_0x5aa813 / (0x3c * 0x3c) % 0x18);
+    var _0x481caf = Math['floor'](_0x5aa813 % (0x3c * 0x3c) / 0x3c);
+    var _0xe975ae = Math['floor'](_0x5aa813 % 0x3c);
+    return _0x348e46(_0x2b64c8) + '\x20horas,\x20' + _0x348e46(_0x481caf) + '\x20minutos\x20e\x20' + _0x348e46(_0xe975ae) + '\x20segundos.';
 }
-function TimeCount(_0x4ff150) {
-    function _0x952339(_0x28dd47) {
-        return (_0x28dd47 < 0xa ? '0' : '') + _0x28dd47;
+function TimeCount(_0x99a5f9) {
+    function _0x4a9537(_0x2efb16) {
+        return (_0x2efb16 < 0xa ? '0' : '') + _0x2efb16;
     }
     ;
-    var _0x2ca599 = Math['floor'](_0x4ff150 / (0x3c * 0x3c) / 0x18);
-    var _0x3aa2b5 = Math['floor'](_0x4ff150 / (0x3c * 0x3c) % 0x18);
-    var _0x1df44a = Math['floor'](_0x4ff150 % (0x3c * 0x3c) / 0x3c);
-    var _0x41a834 = Math['floor'](_0x4ff150 % 0x3c);
-    return _0x952339(_0x2ca599) + '\x20dia(s),\x20' + _0x952339(_0x3aa2b5) + '\x20hora(s),\x20' + _0x952339(_0x1df44a) + '\x20minuto(s)\x20e\x20' + _0x952339(_0x41a834) + '\x20segundo(s).';
+    var _0x168f40 = Math['floor'](_0x99a5f9 / (0x3c * 0x3c) / 0x18);
+    var _0x57df3b = Math['floor'](_0x99a5f9 / (0x3c * 0x3c) % 0x18);
+    var _0x1427bc = Math['floor'](_0x99a5f9 % (0x3c * 0x3c) / 0x3c);
+    var _0x30934c = Math['floor'](_0x99a5f9 % 0x3c);
+    return _0x4a9537(_0x168f40) + '\x20dia(s),\x20' + _0x4a9537(_0x57df3b) + '\x20hora(s),\x20' + _0x4a9537(_0x1427bc) + '\x20minuto(s)\x20e\x20' + _0x4a9537(_0x30934c) + '\x20segundo(s).';
 }
-const addNumberMais = _0x1aaba0 => {
-    usu = (_0x1aaba0['includes']('@s.whatsapp.net') ? _0x1aaba0 : identArroba(_0x1aaba0))['split']('@')[0x0];
+const addNumberMais = _0x3c4704 => {
+    usu = (_0x3c4704['includes']('@s.whatsapp.net') ? _0x3c4704 : identArroba(_0x3c4704))['split']('@')[0x0];
     return '+' + usu['slice'](0x0, 0x2) + '\x20' + usu['slice'](0x2, 0x4) + '\x20' + usu['slice'](0x4, usu['length'] - 0x4) + '-' + usu['slice'](usu['length'] - 0x4, usu['length']);
 };
-const sendHours = _0xb6cb7f => {
+const sendHours = _0x3e52a8 => {
     moment['locale']('pt');
-    return moment['tz']('America/Sao_Paulo')['format'](_0xb6cb7f);
+    return moment['tz']('America/Sao_Paulo')['format'](_0x3e52a8);
 };
-const shuffle = _0x5ef6b0 => {
-    palavra = _0x5ef6b0 + '\x20';
+const shuffle = _0x84e894 => {
+    palavra = _0x84e894 + '\x20';
     armax = [];
     for (i = 0x0; i < palavra['length']; i++) {
         armax['push']({ 'l': palavra['split'](palavra['slice'](i + 0x1))[0x0]['slice'](i) });
@@ -283,122 +283,122 @@ const shuffle = _0x5ef6b0 => {
     }
     return shuffleProcess;
 };
-async function getJsonCached(_0x681487) {
-    if (globalCache['has'](_0x681487))
-        return globalCache['get'](_0x681487);
+async function getJsonCached(_0x1fab26) {
+    if (globalCache['has'](_0x1fab26))
+        return globalCache['get'](_0x1fab26);
     try {
-        if (!fs['existsSync'](_0x681487))
+        if (!fs['existsSync'](_0x1fab26))
             return null;
-        const _0x34fe9d = JSON['parse'](await fsPromises['readFile'](_0x681487, 'utf8'));
-        globalCache['set'](_0x681487, _0x34fe9d);
-        return _0x34fe9d;
-    } catch (_0x5da540) {
-        console['error']('Erro\x20ao\x20ler\x20cache\x20de\x20' + _0x681487 + ':', _0x5da540);
+        const _0x374fc1 = JSON['parse'](await fsPromises['readFile'](_0x1fab26, 'utf8'));
+        globalCache['set'](_0x1fab26, _0x374fc1);
+        return _0x374fc1;
+    } catch (_0xb1a131) {
+        console['error']('Erro\x20ao\x20ler\x20cache\x20de\x20' + _0x1fab26 + ':', _0xb1a131);
         return null;
     }
 }
-async function saveJsonAsync(_0x544114, _0x3e32ca) {
+async function saveJsonAsync(_0x5dc148, _0x2510ec) {
     try {
-        globalCache['set'](_0x544114, _0x3e32ca);
-        await fsPromises['writeFile'](_0x544114, JSON['stringify'](_0x3e32ca, null, 0x2));
-    } catch (_0x33fbd1) {
-        console['error']('Erro\x20ao\x20salvar\x20' + _0x544114 + ':', _0x33fbd1);
+        globalCache['set'](_0x5dc148, _0x2510ec);
+        await fsPromises['writeFile'](_0x5dc148, JSON['stringify'](_0x2510ec, null, 0x2));
+    } catch (_0x57fd84) {
+        console['error']('Erro\x20ao\x20salvar\x20' + _0x5dc148 + ':', _0x57fd84);
     }
 }
-const getFileBuffer = async (_0x47daa3, _0x29c595) => {
-    const _0x4985cf = await downloadContentFromMessage(_0x47daa3, _0x29c595);
-    let _0x328bcc = Buffer['from']([]);
-    for await (const _0x20013f of _0x4985cf) {
-        _0x328bcc = Buffer['concat']([
-            _0x328bcc,
-            _0x20013f
+const getFileBuffer = async (_0x4f272b, _0x387cf6) => {
+    const _0x4cf161 = await downloadContentFromMessage(_0x4f272b, _0x387cf6);
+    let _0x4cf30e = Buffer['from']([]);
+    for await (const _0x28e71e of _0x4cf161) {
+        _0x4cf30e = Buffer['concat']([
+            _0x4cf30e,
+            _0x28e71e
         ]);
     }
-    return _0x328bcc;
+    return _0x4cf30e;
 };
-const sleep = async _0x39c9b9 => {
-    return new Promise(_0x159e6f => setTimeout(_0x159e6f, _0x39c9b9));
+const sleep = async _0x227f20 => {
+    return new Promise(_0x3c9b6f => setTimeout(_0x3c9b6f, _0x227f20));
 };
-const sendPoll = (_0xa59d88, _0x5285de, _0x302f73 = '', _0x51a011 = [], _0x1213a2 = 0x1) => {
-    return _0xa59d88['sendMessage'](_0x5285de, {
+const sendPoll = (_0x3b54a4, _0x3060f3, _0x22faae = '', _0x1c220e = [], _0x5a383f = 0x1) => {
+    return _0x3b54a4['sendMessage'](_0x3060f3, {
         'poll': {
-            'name': _0x302f73,
-            'values': _0x51a011,
-            'selectableCount': _0x1213a2
+            'name': _0x22faae,
+            'values': _0x1c220e,
+            'selectableCount': _0x5a383f
         },
         'messageContextInfo': { 'messageSecret': randomBytes(0x20) }
     }, {
-        'id': _0x5285de,
-        'options': { 'userJid': _0xa59d88?.['user']?.['id'] }
+        'id': _0x3060f3,
+        'options': { 'userJid': _0x3b54a4?.['user']?.['id'] }
     })['catch'](() => {
         return console['log'](console['error']);
     });
 };
-const simih = async _0x16c27e => {
+const simih = async _0x2d5dba => {
     try {
-        const _0x1a7bcc = 'https://okarun-api.com.br/ia/simih?query=' + encodeURIComponent(_0x16c27e);
-        const _0x8a7fa2 = await fetchJson(_0x1a7bcc);
-        if (_0x8a7fa2?.['resultado']?.['trim']?.())
-            return { 'resposta': _0x8a7fa2['resultado']['trim']() };
+        const _0x4bc7e3 = 'https://okarun-api.com.br/ia/simih?query=' + encodeURIComponent(_0x2d5dba);
+        const _0x2bf755 = await fetchJson(_0x4bc7e3);
+        if (_0x2bf755?.['resultado']?.['trim']?.())
+            return { 'resposta': _0x2bf755['resultado']['trim']() };
         return { 'resposta': '🤖💩\x20Não\x20sei\x20responder\x20isso\x20kkkkk' };
-    } catch (_0x4550a4) {
+    } catch (_0x46b572) {
         return { 'resposta': '🤖💩\x20Buguei\x20todo\x20aqui\x20kkkkk' };
     }
 };
-function obeso(_0x2c9ab8, _0x5da2bc) {
-    return Number(parseFloat(_0x2c9ab8) / parseFloat(_0x5da2bc) ** 0x2)['toFixed'](0x2);
+function obeso(_0x2e8749, _0x1044e9) {
+    return Number(parseFloat(_0x2e8749) / parseFloat(_0x1044e9) ** 0x2)['toFixed'](0x2);
 }
-function capitalizeFirstLetter(_0x573691) {
-    return _0x573691['charAt'](0x0)['toUpperCase']() + _0x573691['substring'](0x1);
+function capitalizeFirstLetter(_0x2cb8bf) {
+    return _0x2cb8bf['charAt'](0x0)['toUpperCase']() + _0x2cb8bf['substring'](0x1);
 }
-const countDays = (_0x19dcd5, _0x285d38) => {
-    if (!(_0x19dcd5 || _0x285d38))
+const countDays = (_0x29932b, _0x3f309d) => {
+    if (!(_0x29932b || _0x3f309d))
         return 0x0;
-    _0x19dcd5 = new Date(_0x19dcd5[0x1] + '/' + _0x19dcd5[0x0] + '/' + _0x19dcd5[0x2]);
-    _0x285d38 = new Date(_0x285d38[0x1] + '/' + _0x285d38[0x0] + '/' + _0x285d38[0x2]);
-    const _0xd87806 = Math['abs'](_0x285d38['getTime']() - _0x19dcd5['getTime']());
-    const _0x592697 = Math['ceil'](_0xd87806 / (0x3e8 * 0xe10 * 0x18));
-    return _0x592697 || 0x0;
+    _0x29932b = new Date(_0x29932b[0x1] + '/' + _0x29932b[0x0] + '/' + _0x29932b[0x2]);
+    _0x3f309d = new Date(_0x3f309d[0x1] + '/' + _0x3f309d[0x0] + '/' + _0x3f309d[0x2]);
+    const _0x2838f9 = Math['abs'](_0x3f309d['getTime']() - _0x29932b['getTime']());
+    const _0x7feecf = Math['ceil'](_0x2838f9 / (0x3e8 * 0xe10 * 0x18));
+    return _0x7feecf || 0x0;
 };
-const timeDate = (_0x23d4c1, _0xe9b6d6, _0x323c10 = !![]) => {
-    if (Number(_0xe9b6d6) && _0x323c10)
-        return moment(_0xe9b6d6 * 0x3e8)['tz']('America/Sao_Paulo')['format'](_0x23d4c1);
-    if (Number(_0xe9b6d6))
-        return moment(_0xe9b6d6)['tz']('America/Sao_Paulo')['format'](_0x23d4c1);
-    return moment['tz']('America/Sao_Paulo')['format'](_0x23d4c1);
+const timeDate = (_0x3f69e5, _0x359aa5, _0x372ab7 = !![]) => {
+    if (Number(_0x359aa5) && _0x372ab7)
+        return moment(_0x359aa5 * 0x3e8)['tz']('America/Sao_Paulo')['format'](_0x3f69e5);
+    if (Number(_0x359aa5))
+        return moment(_0x359aa5)['tz']('America/Sao_Paulo')['format'](_0x3f69e5);
+    return moment['tz']('America/Sao_Paulo')['format'](_0x3f69e5);
 };
-const alerandom = _0x23519b => {
-    return Math['floor'](Math['random']() * _0x23519b);
+const alerandom = _0x40e5e5 => {
+    return Math['floor'](Math['random']() * _0x40e5e5);
 };
 var letras = 'abcdefghijklmnopqrstuvwxyz';
 const randomLetra = () => letras[alerandom(letras['length'])]['toUpperCase']();
-const formatNumber = _0x1b81b0 => {
-    if (_0x1b81b0 >= 0x3b9aca00)
-        return (_0x1b81b0 / 0x3b9aca00)['toFixed'](0x1) + 'B';
-    if (_0x1b81b0 >= 0xf4240)
-        return (_0x1b81b0 / 0xf4240)['toFixed'](0x1) + 'M';
-    if (_0x1b81b0 >= 0x186a0)
-        return (_0x1b81b0 / 0x3e8)['toFixed'](0x1) + 'K';
-    if (_0x1b81b0 >= 0x2710)
-        return (_0x1b81b0 / 0x3e8)['toFixed'](0x1) + 'K';
-    if (_0x1b81b0 >= 0x3e8)
-        return (_0x1b81b0 / 0x3e8)['toFixed'](0x1) + 'K';
-    return _0x1b81b0;
+const formatNumber = _0x33a551 => {
+    if (_0x33a551 >= 0x3b9aca00)
+        return (_0x33a551 / 0x3b9aca00)['toFixed'](0x1) + 'B';
+    if (_0x33a551 >= 0xf4240)
+        return (_0x33a551 / 0xf4240)['toFixed'](0x1) + 'M';
+    if (_0x33a551 >= 0x186a0)
+        return (_0x33a551 / 0x3e8)['toFixed'](0x1) + 'K';
+    if (_0x33a551 >= 0x2710)
+        return (_0x33a551 / 0x3e8)['toFixed'](0x1) + 'K';
+    if (_0x33a551 >= 0x3e8)
+        return (_0x33a551 / 0x3e8)['toFixed'](0x1) + 'K';
+    return _0x33a551;
 };
-const formatNumberDecimal = _0x1ee6da => {
-    return _0x1ee6da['toLocaleString']('pt-BR');
+const formatNumberDecimal = _0x58b872 => {
+    return _0x58b872['toLocaleString']('pt-BR');
 };
 const {convertWhatsAppUser} = require('./database/users/senderlid.js');
-const identArroba = _0x151e86 => {
-    if (_0x151e86['includes']('@')) {
-        tamanho = _0x151e86['split']('@')[0x1]['replace'](new RegExp('[()+-/\x20+/]', 'gi'), '');
+const identArroba = _0x1e1022 => {
+    if (_0x1e1022['includes']('@')) {
+        tamanho = _0x1e1022['split']('@')[0x1]['replace'](new RegExp('[()+-/\x20+/]', 'gi'), '');
         nmr = tamanho + (tamanho['length'] > 0xd ? '@lid' : '@s.whatsapp.net');
         return convertWhatsAppUser(nmr);
     } else
-        return _0x151e86['replace'](new RegExp('[()+-/\x20+/]', 'gi'), '') + '@s.whatsapp.net';
+        return _0x1e1022['replace'](new RegExp('[()+-/\x20+/]', 'gi'), '') + '@s.whatsapp.net';
 };
-function extractStateFromDDD(_0x454946) {
-    const _0x29b33e = {
+function extractStateFromDDD(_0x4e0661) {
+    const _0x1198b0 = {
         '11': 'São\x20Paulo\x20(SP)',
         '12': 'São\x20Paulo\x20(SP)',
         '13': 'São\x20Paulo\x20(SP)',
@@ -466,10 +466,10 @@ function extractStateFromDDD(_0x454946) {
         '98': 'Maranhão\x20(MA)',
         '99': 'Maranhão\x20(MA)'
     };
-    return _0x29b33e[_0x454946] || '';
+    return _0x1198b0[_0x4e0661] || '';
 }
-const rmLetras = _0x3f5f98 => {
-    return _0x3f5f98['toLowerCase']()['normalize']('NFD')['replace'](/[\u0300-\u036f]/g, '');
+const rmLetras = _0x3ddc6a => {
+    return _0x3ddc6a['toLowerCase']()['normalize']('NFD')['replace'](/[\u0300-\u036f]/g, '');
 };
 module['exports'] = {
     'rmLetras': rmLetras,

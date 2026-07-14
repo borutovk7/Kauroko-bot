@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ulimit -c 0 && bash start.sh sim",
-    "test": "node connect.js"
+    "test": "node connect.js",
+    "build:sqlite": "npm install-scripts approve @irithell-js/better-sqlite3-termux && npm rebuild @irithell-js/better-sqlite3-termux"
   },
   "dependencies": {
     "@boruto_vk7/baileys": "latest",

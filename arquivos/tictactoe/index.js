@@ -4,28 +4,28 @@ const apikeys = require('../../configs/apikeys.json');
 const {apis = {}, sites = {}, groups = {}} = apikeys;
 const {okarunsite} = sites;
 const {API_KEY_WAGURI, API_KEY_OKARUN} = apis;
-function buildBoardImageUrl(_0x25999e) {
-    const _0x3519af = JSON['stringify'](_0x25999e['_matrix']);
-    const _0x924759 = new URLSearchParams({
+function buildBoardImageUrl(_0x2d6309) {
+    const _0x113fbc = JSON['stringify'](_0x2d6309['_matrix']);
+    const _0x3d0e5d = new URLSearchParams({
         'apikey': API_KEY_WAGURI,
-        'board': _0x3519af,
-        'turn': _0x25999e['turn'],
-        'isWin': String(_0x25999e['isWin']),
-        'winner': _0x25999e['winner'] || ''
+        'board': _0x113fbc,
+        'turn': _0x2d6309['turn'],
+        'isWin': String(_0x2d6309['isWin']),
+        'winner': _0x2d6309['winner'] || ''
     });
-    return okarunsite + '/api/canvas/jogodavelha?' + _0x924759['toString']();
+    return okarunsite + '/api/canvas/jogodavelha?' + _0x3d0e5d['toString']();
 }
 const DB_PATH = './arquivos/tictactoe/db/';
 if (!fs['existsSync'](DB_PATH))
     fs['mkdirSync'](DB_PATH, { 'recursive': !![] });
-function defineSave(_0xd5ef39, _0x30e4fb) {
-    const _0x4bdd89 = path['join'](DB_PATH, _0x30e4fb + '.json');
-    fs['writeFileSync'](_0x4bdd89, JSON['stringify'](_0xd5ef39, null, 0x2));
+function defineSave(_0x3c91f4, _0x2538dc) {
+    const _0x37b84e = path['join'](DB_PATH, _0x2538dc + '.json');
+    fs['writeFileSync'](_0x37b84e, JSON['stringify'](_0x3c91f4, null, 0x2));
 }
-function setGame(_0x2dcde5) {
-    const _0x3e2e23 = path['join'](DB_PATH, _0x2dcde5 + '.json');
-    if (!fs['existsSync'](_0x3e2e23)) {
-        const _0x7029d9 = [
+function setGame(_0x5819ce) {
+    const _0x5916e8 = path['join'](DB_PATH, _0x5819ce + '.json');
+    if (!fs['existsSync'](_0x5916e8)) {
+        const _0x1673f4 = [
             [
                 '1️⃣',
                 '2️⃣',
@@ -42,81 +42,81 @@ function setGame(_0x2dcde5) {
                 '9️⃣'
             ]
         ];
-        const _0x65fb1 = {
+        const _0x9bb1e2 = {
             'status': !![],
-            'session': _0x2dcde5,
+            'session': _0x5819ce,
             'turn': 'X',
             'X': null,
             'O': null,
             'isWin': ![],
             'winner': null,
             'nine_push': [],
-            '_matrix': _0x7029d9
+            '_matrix': _0x1673f4
         };
-        defineSave(_0x65fb1, _0x2dcde5);
-        return _0x65fb1;
+        defineSave(_0x9bb1e2, _0x5819ce);
+        return _0x9bb1e2;
     } else {
         try {
-            return JSON['parse'](fs['readFileSync'](_0x3e2e23, 'utf-8'));
+            return JSON['parse'](fs['readFileSync'](_0x5916e8, 'utf-8'));
         } catch {
             return null;
         }
     }
 }
-function checkWinner(_0x340583) {
-    for (let _0x1b1060 = 0x0; _0x1b1060 < 0x3; _0x1b1060++) {
-        if (_0x340583[_0x1b1060][0x0] === _0x340583[_0x1b1060][0x1] && _0x340583[_0x1b1060][0x1] === _0x340583[_0x1b1060][0x2])
-            return _0x340583[_0x1b1060][0x0];
-        if (_0x340583[0x0][_0x1b1060] === _0x340583[0x1][_0x1b1060] && _0x340583[0x1][_0x1b1060] === _0x340583[0x2][_0x1b1060])
-            return _0x340583[0x0][_0x1b1060];
+function checkWinner(_0x5ca515) {
+    for (let _0x3613d5 = 0x0; _0x3613d5 < 0x3; _0x3613d5++) {
+        if (_0x5ca515[_0x3613d5][0x0] === _0x5ca515[_0x3613d5][0x1] && _0x5ca515[_0x3613d5][0x1] === _0x5ca515[_0x3613d5][0x2])
+            return _0x5ca515[_0x3613d5][0x0];
+        if (_0x5ca515[0x0][_0x3613d5] === _0x5ca515[0x1][_0x3613d5] && _0x5ca515[0x1][_0x3613d5] === _0x5ca515[0x2][_0x3613d5])
+            return _0x5ca515[0x0][_0x3613d5];
     }
-    if (_0x340583[0x0][0x0] === _0x340583[0x1][0x1] && _0x340583[0x1][0x1] === _0x340583[0x2][0x2])
-        return _0x340583[0x0][0x0];
-    if (_0x340583[0x0][0x2] === _0x340583[0x1][0x1] && _0x340583[0x1][0x1] === _0x340583[0x2][0x0])
-        return _0x340583[0x1][0x1];
+    if (_0x5ca515[0x0][0x0] === _0x5ca515[0x1][0x1] && _0x5ca515[0x1][0x1] === _0x5ca515[0x2][0x2])
+        return _0x5ca515[0x0][0x0];
+    if (_0x5ca515[0x0][0x2] === _0x5ca515[0x1][0x1] && _0x5ca515[0x1][0x1] === _0x5ca515[0x2][0x0])
+        return _0x5ca515[0x1][0x1];
     return ![];
 }
-function move(_0x249610, _0x2ad3d2, _0x281121) {
-    const _0x2f9f3c = setGame(_0x281121);
-    if (!_0x2f9f3c)
+function move(_0x44a392, _0x4080ef, _0x43590e) {
+    const _0x173582 = setGame(_0x43590e);
+    if (!_0x173582)
         return {
             'status': ![],
             'message': 'Erro\x20ao\x20carregar\x20sessão.'
         };
-    if (_0x2f9f3c['isWin']) {
+    if (_0x173582['isWin']) {
         return {
             'status': ![],
             'message': 'O\x20jogo\x20já\x20foi\x20finalizado.'
         };
     }
-    const _0x22e0f3 = _0x2f9f3c['_matrix'][_0x249610][_0x2ad3d2];
-    if (_0x22e0f3 === '❌' || _0x22e0f3 === '⭕') {
+    const _0x1aa8f9 = _0x173582['_matrix'][_0x44a392][_0x4080ef];
+    if (_0x1aa8f9 === '❌' || _0x1aa8f9 === '⭕') {
         return {
             'status': ![],
-            'message': 'Posição\x20já\x20ocupada\x20por\x20' + _0x22e0f3
+            'message': 'Posição\x20já\x20ocupada\x20por\x20' + _0x1aa8f9
         };
     }
-    const _0x20ff03 = _0x2f9f3c['turn'] === 'X' ? '❌' : '⭕';
-    _0x2f9f3c['_matrix'][_0x249610][_0x2ad3d2] = _0x20ff03;
-    _0x2f9f3c['nine_push']['push'](_0x20ff03);
-    const _0x530d60 = checkWinner(_0x2f9f3c['_matrix']);
-    if (_0x530d60 === '❌' || _0x530d60 === '⭕') {
-        _0x2f9f3c['isWin'] = !![];
-        _0x2f9f3c['winner'] = _0x530d60 === '❌' ? 'X' : 'O';
-    } else if (_0x2f9f3c['nine_push']['length'] >= 0x9) {
-        _0x2f9f3c['isWin'] = !![];
-        _0x2f9f3c['winner'] = 'SERI';
+    const _0x504e1f = _0x173582['turn'] === 'X' ? '❌' : '⭕';
+    _0x173582['_matrix'][_0x44a392][_0x4080ef] = _0x504e1f;
+    _0x173582['nine_push']['push'](_0x504e1f);
+    const _0xe9ddd = checkWinner(_0x173582['_matrix']);
+    if (_0xe9ddd === '❌' || _0xe9ddd === '⭕') {
+        _0x173582['isWin'] = !![];
+        _0x173582['winner'] = _0xe9ddd === '❌' ? 'X' : 'O';
+    } else if (_0x173582['nine_push']['length'] >= 0x9) {
+        _0x173582['isWin'] = !![];
+        _0x173582['winner'] = 'SERI';
     } else {
-        _0x2f9f3c['turn'] = _0x2f9f3c['turn'] === 'X' ? 'O' : 'X';
+        _0x173582['turn'] = _0x173582['turn'] === 'X' ? 'O' : 'X';
     }
-    defineSave(_0x2f9f3c, _0x281121);
-    return _0x2f9f3c;
+    defineSave(_0x173582, _0x43590e);
+    return _0x173582;
 }
-function validmove(_0x94fab4, _0x44a7c6) {
-    const _0x3a3ad2 = Number(_0x94fab4);
-    if (isNaN(_0x3a3ad2) || _0x3a3ad2 < 0x1 || _0x3a3ad2 > 0x9)
+function validmove(_0x3a1626, _0xe51f02) {
+    const _0x4543e2 = Number(_0x3a1626);
+    if (isNaN(_0x4543e2) || _0x4543e2 < 0x1 || _0x4543e2 > 0x9)
         return ![];
-    const _0x334bdc = {
+    const _0x3a62ac = {
         0x1: [
             0x0,
             0x0
@@ -154,16 +154,16 @@ function validmove(_0x94fab4, _0x44a7c6) {
             0x2
         ]
     };
-    const [_0x33f0cf, _0x9c18a0] = _0x334bdc[_0x3a3ad2];
-    return move(_0x33f0cf, _0x9c18a0, _0x44a7c6);
+    const [_0x1727fa, _0x524666] = _0x3a62ac[_0x4543e2];
+    return move(_0x1727fa, _0x524666, _0xe51f02);
 }
 module['exports'] = {
     'setGame': setGame,
     'validmove': validmove,
     'buildBoardImageUrl': buildBoardImageUrl,
-    'delGame': _0x15426c => {
-        const _0xa025e9 = path['join'](DB_PATH, _0x15426c + '.json');
-        if (fs['existsSync'](_0xa025e9))
-            fs['unlinkSync'](_0xa025e9);
+    'delGame': _0x47c160 => {
+        const _0x565607 = path['join'](DB_PATH, _0x47c160 + '.json');
+        if (fs['existsSync'](_0x565607))
+            fs['unlinkSync'](_0x565607);
     }
 };
