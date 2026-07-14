@@ -84,14 +84,15 @@ Se, depois do `npm install`, aparecer um erro como **“SQLite não carregou”*
 
 ```bash
 pkg install -y python make clang
-npm install-scripts approve @irithell-js/better-sqlite3-termux
+npm install-scripts approve --no-allow-scripts-pin better-sqlite3
 npm run build:sqlite
 ```
 
-Se o `npm install` avisar que scripts foram bloqueados, aprove também o downloader:
+Em algumas versões recentes do npm, o pacote nativo pendente aparece como `better-sqlite3` (sem o prefixo `@irithell-js/`). Se o `npm install` avisar que scripts foram bloqueados, aprove também os pacotes indicados pelo comando abaixo:
 
 ```bash
-npm install-scripts approve @irithell-js/yt-play
+npm install-scripts ls
+npm install-scripts approve --no-allow-scripts-pin better-sqlite3
 ```
 
 O comando `npm run build:sqlite` executa:
