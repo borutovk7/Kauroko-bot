@@ -88,6 +88,12 @@ npm install-scripts approve @irithell-js/better-sqlite3-termux
 npm run build:sqlite
 ```
 
+Se o `npm install` avisar que scripts foram bloqueados, aprove também o downloader:
+
+```bash
+npm install-scripts approve @irithell-js/yt-play
+```
+
 O comando `npm run build:sqlite` executa:
 
 ```bash

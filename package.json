@@ -69,5 +69,15 @@
     "url": "https://github.com/borutovk7/Kauroko-bot"
   },
   "homepage": "https://api.okarunsystem.com.br",
+  "allowScripts": {
+    "@boruto_vk7/opus-ogg@1.2.2": true,
+    "@google/genai": true,
+    "node_extra_ca_certs_mozilla_bundle": true,
+    "protobufjs": true,
+    "tesseract.js": true,
+    "@boruto_vk7/baileys@1.0.11-rc10-dudu": true,
+    "@irithell-js/better-sqlite3-termux@1.0.6": true,
+    "@irithell-js/yt-play@0.4.6": true
+  },
   "private": false
 }
