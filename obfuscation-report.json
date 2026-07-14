@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-07-14T10:09:00.610Z",
+  "output": "/home/user/project/git-release",
+  "packageName": "kaoruko-waguri",
+  "copiedFiles": 99,
+  "obfuscatedFiles": 78,
+  "mode": "safe",
+  "excludedFolders": [
+    ".git",
+    ".github",
+    ".arena",
+    ".cache",
+    ".npm",
+    ".vscode",
+    "node_modules",
+    "coverage",
+    "dist",
+    "build",
+    "out",
+    "uploads",
+    "scripts",
+    "cookies",
+    "npm-release",
+    "database/KAUROKO-QR",
+    "database/KAUROKO-QR-BACKUP",
+    "database/subbots",
+    "subbot/sessions",
+    "util/temp"
+  ],
+  "sensitiveFindings": []
+}

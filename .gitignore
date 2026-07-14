@@ -1,0 +1,38 @@
+# Dependências e saídas de build
+node_modules/
+npm-release/
+dist/
+build/
+coverage/
+
+# Ambiente e credenciais
+.env
+.env.*
+!.env.example
+configs/apikeys.json
+configs/config_Efipay.json
+cookies/
+*.p12
+*.pem
+*.key
+*.crt
+*.cer
+
+# Sessões, QR Code e dados persistentes
+qrcode.png
+database/KAUROKO-QR/
+database/KAUROKO-QR-BACKUP/
+database/subbots/
+subbot/sessions/
+database/**/*.sqlite
+database/**/*.sqlite-shm
+database/**/*.sqlite-wal
+database/**/*.db
+database/**/*.db-shm
+database/**/*.db-wal
+
+# Arquivos temporários e cópias
+util/temp/
+*.bak
+*.obf.tmp.js
+*.log

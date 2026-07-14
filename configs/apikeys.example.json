@@ -1,0 +1,27 @@
+{
+  "apis": {
+    "API_KEY_OKARUN": "CONFIGURE_AQUI",
+    "API_KEY_BRONXYS": "CONFIGURE_AQUI",
+    "API_KEY_ZEROTWO": "CONFIGURE_AQUI",
+    "API_KEY_CONSULT": "CONFIGURE_AQUI",
+    "API_KEY_WAGURI": "CONFIGURE_AQUI",
+    "CLOUDINARY_CLOUD_NAME": "dlmoujcpv",
+    "CLOUDINARY_API_KEY": "CONFIGURE_AQUI",
+    "CLOUDINARY_API_SECRET": "CONFIGURE_AQUI",
+    "API_KEY_ASSEMBLY": "CONFIGURE_AQUI",
+    "GITHUB_TOKEN": "CONFIGURE_AQUI",
+    "GITHUB_USER": "borutovk7",
+    "GITHUB_REPO": "kauroko-audios",
+    "GITHUB_BRANCH": "main",
+    "GEMINI_API_KEY": "CONFIGURE_AQUI",
+    "GROQ_API_KEY": "CONFIGURE_AQUI"
+  },
+  "sites": {
+    "okarunsite": "https://api.okarunsystem.com.br",
+    "annysite": "https://anny-kyomi.online",
+    "zerosite": "https://zero-two-apis.com.br"
+  },
+  "groups": {
+    "group": "CONFIGURE_AQUI"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_comentario": "Edite aqui os planos de aluguel do subbot. 'dias' = duração, 'preco' = valor em reais cobrado via Pix (Efí Bank). A chave (ex: '7') é o que a pessoa digita no comando, ex: .serbot 7 -qr",
+  "limiteSubbotsPorUsuario": 1,
+  "planos": {
+    "7": {
+      "dias": 7,
+      "preco": 10
+    },
+    "15": {
+      "dias": 15,
+      "preco": 15
+    },
+    "30": {
+      "dias": 30,
+      "preco": 20
+    }
+  }
+}

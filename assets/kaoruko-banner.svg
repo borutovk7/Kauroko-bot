@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kaoruko Waguri</title>
+  <desc id="desc">Banner roxo decorativo para a Kaoruko Waguri</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140b2d"/>
+      <stop offset="48%" stop-color="#3d1867"/>
+      <stop offset="100%" stop-color="#120b29"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d9adff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d6a6ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="orb">
+      <stop offset="0%" stop-color="#efc9ff" stop-opacity=".8"/>
+      <stop offset="45%" stop-color="#bd71eb" stop-opacity=".24"/>
+      <stop offset="100%" stop-color="#bd71eb" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="130" cy="78" r="190" fill="url(#orb)"/>
+  <circle cx="1080" cy="300" r="240" fill="url(#orb)"/>
+  <path d="M-40 282C185 197 281 355 484 278S816 190 1240 268" fill="none" stroke="#dca7ff" stroke-opacity=".20" stroke-width="2"/>
+  <path d="M-20 300C195 220 300 374 510 296s351-99 720-16" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="1"/>
+
+  <g fill="#f3d8ff" opacity=".85">
+    <circle cx="112" cy="99" r="2"/><circle cx="192" cy="253" r="3"/><circle cx="283" cy="62" r="2"/>
+    <circle cx="892" cy="58" r="3"/><circle cx="1030" cy="110" r="2"/><circle cx="1111" cy="220" r="3"/>
+    <circle cx="735" cy="300" r="2"/><circle cx="411" cy="314" r="2"/>
+  </g>
+  <g fill="#f4cfff" filter="url(#glow)">
+    <path d="M103 190l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M1086 103l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M940 283l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+  </g>
+
+  <g transform="translate(600 168)" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text y="-52" fill="#eecfff" font-size="18" font-weight="700" letter-spacing="8">WHATSAPP AUTOMATION SYSTEM</text>
+    <text y="15" fill="url(#shine)" font-size="62" font-weight="800" letter-spacing="2">KAORUKO WAGURI</text>
+    <rect x="-224" y="43" width="448" height="1" fill="#e8beff" opacity=".55"/>
+    <text y="82" fill="#ead8f7" font-size="19" letter-spacing="3">MODERAÇÃO • UTILIDADES • JOGOS • COMUNIDADE</text>
+  </g>
+
+  <g transform="translate(70 259)" fill="none" stroke="#f0ccff" stroke-width="2" opacity=".78">
+    <path d="M0 0c19-18 40-18 59 0-19 18-40 18-59 0Z"/>
+    <path d="M13 0c15-10 29-10 44 0-15 10-29 10-44 0Z"/>
+  </g>
+  <g transform="translate(1060 60)" fill="none" stroke="#f0ccff" stroke-width="2" opacity=".78">
+    <path d="M0 0c19-18 40-18 59 0-19 18-40 18-59 0Z"/>
+    <path d="M13 0c15-10 29-10 44 0-15 10-29 10-44 0Z"/>
+  </g>
+</svg>
